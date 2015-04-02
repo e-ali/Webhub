@@ -1,0 +1,57 @@
+body {
+	background-color: #112255;
+	color: #77aacc;
+}
+
+header {
+	background-color: #303C5F;
+	color: #77aacc;
+	text-align: center;
+	padding: 1px;
+	margin-bottom: 10px;
+}
+
+.category {
+	background-color: grey;
+	text-align: center;
+	display: inline-block;
+	border: 2px solid black;
+	width: 25%;
+	vertical-align: top;
+}
+
+.list {
+	text-align: center;
+	list-style-type: none;
+	margin: 0px 0px 5px;
+	padding: 0px 0px;
+}
+
+/* footer stuff */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -40px; 
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 40px; 
+}
+.site-footer {
+	background-color: #303C5F;
+	text-align: center;
+	vertical-align: middle;
+}
