@@ -1,18 +1,18 @@
 body {
-	background-color: #112255;
-	color: #77aacc;
+	background-color: #103D50;
+	color: #ffffff;
 }
 
 header {
-	background-color: #303C5F;
-	color: #77aacc;
+	background-color: #1E2426;
+	color: #ffffff;
 	text-align: center;
 	padding: 1px;
 	margin-bottom: 10px;
 }
 
 .category {
-	background-color: grey;
+	background-color: #1E2426;
 	text-align: center;
 	display: inline-block;
 	border: 2px solid black;
@@ -51,7 +51,7 @@ html, body {
   height: 40px; 
 }
 .site-footer {
-	background-color: #303C5F;
+	background-color: #1E2426;
 	text-align: center;
 	vertical-align: middle;
 }

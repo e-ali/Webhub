@@ -1,6 +1,6 @@
 function change_header(element, state) {
 	if (state)
-		element.style.setProperty("color", "red");
+		element.style.setProperty("color", "#6E92A1");
 	else
 		element.style.removeProperty('color');
 
@@ -22,9 +22,9 @@ function color_links(){
 
 	for (i = 0; i < links.length; i++)
 		if (i % 2)
-			links[i].style.setProperty("color", "red");
+			links[i].style.setProperty("color", "#6E92A1");
 		else
-			links[i].style.setProperty("color", "blue");
+			links[i].style.setProperty("color", "#467386");
 }
 
 window.addEventListener("load", add_listener);
