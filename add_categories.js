@@ -1,18 +1,5 @@
 function make_request(url) {
-	if (window.XMLHttpRequest) { // Mozilla, Safari, ...
-		http_req = new XMLHttpRequest();
-	} else if (window.ActiveXObject) { // IE
-		try {
-			http_req = new ActiveXObject("Msxml2.XMLHTTP");
-		} 
-		catch (e) {
-			try {
-				http_req = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-		catch (e) {}
-		}
-	}
-
+	http_req = new XMLHttpRequest();
 	if (!http_req) {
 		alert('Giving up :( Cannot create an XMLHTTP instance');
 		return false;
@@ -27,8 +14,8 @@ function make_request(url) {
 function append_categories() {
 	if (http_req.readyState == 4 && http_req.status == 200) {
 		var categories = document.querySelector("#categories");
-		categories.insertAdjacentHTML("beforeend", "<br />");
-		categories.insertAdjacentHTML("beforeend", http_req.responseText);
+		categories.innerHTML += "<br />" + http_req.responseText;
+		color_links();
 	} else {
 		//alert('There was a problem with the request.');
 	}

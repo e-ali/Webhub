@@ -13,12 +13,25 @@ header {
 
 .category {
 	background-color: #1E2426;
+	opacity: 0.8;
 	text-align: center;
 	display: inline-block;
 	border: 2px solid black;
 	width: 25%;
 	vertical-align: top;
 	margin: 0px 5px 10px;
+}
+
+.category:hover {
+	opacity: 1;
+}
+
+.category a {
+	text-decoration: none;
+}
+
+.category a:hover {
+	text-decoration: underline;
 }
 
 .list {

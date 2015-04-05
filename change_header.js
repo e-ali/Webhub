@@ -28,4 +28,3 @@ function color_links(){
 }
 
 window.addEventListener("load", add_listener);
-window.addEventListener("load", color_links);
